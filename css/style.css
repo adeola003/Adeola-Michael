@@ -1,3 +1,12 @@
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+#header-img{
+  width: 20px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -5,5 +14,35 @@
 }
 
 #nav-bar {
-  position: fixed;
+  margin-top: 10px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+}
+
+#nav-bar > * {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#nav-bar > *:nth-child(2):hover {
+  text-decoration: underline;
+}
+.flex-container {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
 }
